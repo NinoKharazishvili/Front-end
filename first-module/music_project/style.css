@@ -23,6 +23,9 @@ h2 {
   margin-bottom: 0;
   line-height: 0;
 }
+a {
+  text-decoration: none;
+}
 /* --------header------- */
 .header1 {
   height: 40px;
@@ -469,7 +472,6 @@ footer {
   color: #000000;
   font-weight: 400;
   background-color: var(--dec-color);
-  text-decoration: underline;
   text-decoration-color: white;
 }
 
