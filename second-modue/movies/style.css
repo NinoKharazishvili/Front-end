@@ -1,0 +1,343 @@
+/* sidebar */
+
+body {
+  background-color: black;
+  color: white;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 14rem;
+  height: 64rem;
+  background-color: black;
+  padding-top: 15px;
+  margin-left: 4rem;
+}
+.sidebar-brand {
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.sidebar-logo {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.sidebar-text {
+  text-align: right;
+}
+
+.top-text {
+  font-family: "Luckiest Guy", cursive;
+  font-style: normal;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: #f8b319;
+}
+
+.bottom-text {
+  font-family: "Luckiest Guy", cursive;
+  font-style: normal;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: #f8b319;
+}
+.sidebar-logo {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 2rem;
+}
+.sidebar-menu li {
+  padding: 0.35rem 0.6rem;
+  border-right: 3px solid black;
+}
+.sidebar-menu li a {
+  color: white;
+  text-decoration: none;
+}
+.sidebar-menu li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-right-color: orange;
+}
+
+.sidebar-menu li:hover a {
+  color: #f8b319;
+}
+
+.sidebar-menu li:hover .fas {
+  color: #f8b319;
+}
+.fa {
+  margin-right: 10px;
+}
+
+/* ------------------------------------------------------------------ */
+/* navbar */
+.navbar {
+  margin-right: 20rem;
+  height: 5rem;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  color: white;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+.navbar-nav .nav-item {
+  margin-right: 20px;
+}
+
+.form-inline .input-group {
+  width: auto;
+}
+
+.form-inline .form-control {
+  width: 200px;
+}
+.navbar-nav .nav-item {
+  position: relative;
+}
+
+.navbar-nav .nav-item a {
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.navbar-nav .nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid orange;
+  margin-top: -2px;
+}
+
+.navbar-nav .nav-item:hover a {
+  color: #f8b319 !important;
+}
+.navbar-nav .nav-item:hover {
+  top: 1px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.search-form input[type="search"] {
+  flex-grow: 1;
+  border: none;
+  background: transparent;
+  color: white;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.search-button,
+.filter-button {
+  border: none;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.search-button {
+  margin-right: 5px;
+}
+/* ----------------------------------------------------------------------------- */
+/* carousel */
+#carouselExampleIndicators {
+  width: 770px;
+  height: 350px;
+  margin: 2rem 26rem;
+}
+.carousel-inner .carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.btn-left {
+  width: 160px;
+  height: 56px;
+  position: absolute;
+  top: 273px;
+  left: 20px;
+  padding: 19px 25px;
+  gap: 10px;
+  border-radius: 8px;
+  opacity: 1;
+  background: #f9f9f933;
+  border: none;
+  transition: opacity 0.3s ease;
+  color: white;
+}
+
+.btn-right {
+  width: 190px;
+  height: 56px;
+  position: absolute;
+  top: 273px;
+  right: 20px;
+  padding: 19px 47px;
+  gap: 10px;
+  border-radius: 8px;
+  opacity: 1;
+  background: #f8b319;
+  border: none;
+  transition: opacity 0.3s ease;
+}
+.btn-left,
+.btn-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* ------------------------------------------------------------------------ */
+.movies {
+  margin: 5rem 26rem;
+}
+
+.card-container {
+  display: flex;
+}
+
+.card {
+  position: relative;
+  width: 18rem;
+  background-color: transparent;
+  color: white;
+  margin-right: 10px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  position: relative;
+}
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+.card-body {
+  z-index: 1;
+}
+
+.card-title {
+  font-size: 1.25rem;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.btn-outline-secondary {
+  border-color: grey;
+  color: grey;
+}
+
+.btn-orange {
+  background-color: orange;
+  color: black;
+}
+
+.btn-orange:hover {
+  background-color: darkorange;
+}
+
+.text-white {
+  color: white;
+}
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.btn-transparent-gray {
+  background-color: rgba(128, 128, 128, 0.5);
+  color: white;
+  border: none;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+/* ----------------------------------------------------------------------------------------- */
+.top-rated-movies {
+  margin: 5rem 26rem;
+  color: white;
+  background-color: black;
+}
+.card-container {
+  display: flex;
+  gap: 10px;
+}
+.movie-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 250px;
+  background-color: black;
+}
+.movie-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.movie-details {
+  font-size: 12px;
+  margin-top: 10px;
+}
+.movie-image {
+  max-width: 100%;
+  height: auto;
+}
+.view-more-btn {
+  background-color: orange;
+  color: black;
+  font-size: 13px;
+  padding: 2px 5px;
+}
+.card-container p,
+h3 {
+  margin: 2px 0;
+}
+.movie-image {
+  height: 240px;
+  width: 160px;
+}
